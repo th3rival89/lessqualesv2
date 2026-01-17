@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les Squales</title>
+    <link rel="icon" href="ressources/logo_squales_noir.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./styles/output.css">
+</head>
+<body>
+    <head>
+        <hero>
+            <section>
+                <div class="relative w-full h-235 max-[770px]:h-200 max-[425px]:h-175">
+                    <div class="flex flex-col bg-[url(../ressources/Hero.png)] h-full bg-top bg-cover bg-no-repeat max-[770px]:bg-center" alt="Image d'un plongeur dans le fond de la mer">
+                        <div class="flex justify-center mt-5">
+                            <div class="flex items-center">
+                                <a href="index.html"><img src="ressources/logo_squales.png" alt="Logo du club des Squales" class="w-60 max-[380px]:w-40"></a>
+                            </div>
+                            <div class="flex-col items-center">
+                                <p class="pt-2 text-5xl text-white uppercase font-title font-semibold max-[500px]:text-2xl max-[770px]:text-3xl">Les Squales</p>
+                                <p class="pt-2 text-3xl text-white uppercase font-title max-[500px]:text-xl max-[770px]:text-2xl">Ecole de plongée</p>      
+                            </div>
+                        </div>
+                        <div class="flex justify-center mt-5">
+                            <div class="bg-white h-0.25 w-250 opacity-25"></div>
+                        </div>
+                        <!-- <div class="flex justify-center mt-3 gap-8">
+                            <div class="uppercase font-text font-semibold text-white">
+                                <a href="index.html">accueil</a>
+                            </div>
+                            <div class="relative group">
+                                <a href="#" class="flex items-center text-white">
+                                    <div class="uppercase font-text font-semibold" >les squales</div>
+                                    <svg class="ml-2 w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                                    </svg>
+                                </a>
+                                
+                                <div class="absolute hidden group-hover:block top-full left-0 z-10 w-55 bg-white shadow-lg font-text">
+                                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 ">L'histoire</a>
+                                    <a href="/lecomite.html" class="block px-4 py-2 hover:bg-gray-100">Le comité</a>
+                                    <a href="#" class="block px-4 py-2 hover:bg-gray-100">Les moniteurs</a>
+                                    <a href="#" class="block px-4 py-2 hover:bg-gray-100">Les sorties</a>
+                                    <a href="#" class="block px-4 py-2 hover:bg-gray-100">Informations club</a>
+                                    <a href="#" class="block px-4 py-2 hover:bg-gray-100">Les cours</a>
+                                    <a href="#" class="block px-4 py-2 hover:bg-gray-100">Règlement d'Ordre Intérieur</a>
+                                </div>
+                            </div>
+                            <div class="uppercase font-text font-semibold text-white">
+                                <a href="index.html">Les photos</a>
+                            </div>
+                            <div class="relative group">
+                                <a href="#" class="flex items-center text-white">
+                                    <div class="uppercase font-text font-semibold" >liens utiles</div>
+                                    <svg class="ml-2 w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                                    </svg>
+                                </a>
+                                
+                                <div class="absolute hidden group-hover:block top-full left-0 z-10 w-55 bg-white shadow-lg font-text">
+                                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 ">Attestation médicale</a>
+                                    <a href="#" class="block px-4 py-2 hover:bg-gray-100">Déclaration d'accident</a>
+                                    <a href="#" class="block px-4 py-2 hover:bg-gray-100">Site de la LIFRAS</a>
+                                    <a href="#" class="block px-4 py-2 hover:bg-gray-100">Site de la CMAS</a>
+                                </div>
+                            </div>
+                            <div class="uppercase font-text font-semibold text-white">
+                                <a href="index.html">Agenda</a>
+                            </div>
+                            <div class="uppercase font-text font-semibold text-white">
+                                <a href="index.html">Contact</a>
+                            </div>
+                        </div> -->
+
+                        <header class="bg-blue-600 min-[768px]:bg-blue-600/20 ">
+                            <div class="max-w-7xl mx-auto px-4">
+
+                                <!-- Barre du haut -->
+                                <div class="flex items-center justify-center h-16 max-[768px]:justify-end">
+
+                                    <!-- Bouton hamburger (mobile uniquement) -->
+                                    <button id="menu-btn" class="text-white md:hidden">
+                                        <svg class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M4 6h16M4 12h16M4 18h16"/>
+                                        </svg>
+                                    </button>
+
+                                    <!-- Menu desktop -->
+                                    <nav class="hidden md:flex gap-8 items-center font-text font-semibold uppercase text-white">
+
+                                        <a href="index.html">Accueil</a>
+
+                                        <!-- Dropdown -->
+                                        <div class="relative group">
+                                            <button class="flex items-center gap-1">
+                                                Les squales
+                                                <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                        d="M19 9l-7 7-7-7"/>
+                                                </svg>
+                                            </button>
+
+                                            <div class="absolute hidden group-hover:block top-full left-0 bg-white text-black shadow-lg w-56">
+                                                <a class="block px-4 py-2 hover:bg-gray-100" href="#">L'histoire</a>
+                                                <a class="block px-4 py-2 hover:bg-gray-100" href="/lecomite.html">Le comité</a>
+                                                <a class="block px-4 py-2 hover:bg-gray-100" href="#">Les moniteurs</a>
+                                                <a class="block px-4 py-2 hover:bg-gray-100" href="#">Les sorties</a>
+                                                <a class="block px-4 py-2 hover:bg-gray-100" href="#">Informations club</a>
+                                                <a class="block px-4 py-2 hover:bg-gray-100" href="#">Les cours</a>
+                                                <a class="block px-4 py-2 hover:bg-gray-100" href="#">Règlement ROI</a>
+                                            </div>
+                                        </div>
+
+                                        <a href="#">Les photos</a>
+
+                                        <div class="relative group">
+                                            <button class="flex items-center gap-1">
+                                                Liens utiles
+                                                <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                        d="M19 9l-7 7-7-7"/>
+                                                </svg>
+                                            </button>
+
+                                            <div class="absolute hidden group-hover:block top-full left-0 bg-white text-black shadow-lg w-56">
+                                                <a class="block px-4 py-2 hover:bg-gray-100" href="#">Attestation médicale</a>
+                                                <a class="block px-4 py-2 hover:bg-gray-100" href="#">Déclaration d'accident</a>
+                                                <a class="block px-4 py-2 hover:bg-gray-100" href="#">Site LIFRAS</a>
+                                                <a class="block px-4 py-2 hover:bg-gray-100" href="#">Site CMAS</a>
+                                            </div>
+                                        </div>
+
+                                        <a href="#">Agenda</a>
+                                        <a href="#">Contact</a>
+                                    </nav>
+                                </div>
+                            </div>
+
+                            <!-- Menu mobile -->
+                            <nav id="mobile-menu"
+                                class="hidden md:hidden bg-blue-700 text-white font-text uppercase px-6 py-4 space-y-4 text-sm">
+
+                                <a href="index.html" class="block">Accueil</a>
+
+                                <!-- Sous-menu mobile -->
+                                <div>
+                                    <button class="flex justify-between w-full mobile-dropdown uppercase">
+                                        Les squales
+                                        <span>+</span>
+                                    </button>
+                                    <div class="hidden pl-4 mt-2 space-y-2">
+                                        <a href="#">L'histoire</a><br>
+                                        <a href="/lecomite.html">Le comité</a><br>
+                                        <a href="#">Les moniteurs</a><br>
+                                        <a href="#">Les sorties</a><br>
+                                        <a href="#">Informations club</a><br>
+                                        <a href="#">Les cours</a><br>
+                                        <a href="#">Règlement ROI</a>
+                                    </div>
+                                </div>
+
+                                <a href="#">Les photos</a>
+
+                                <div>
+                                    <button class="flex justify-between w-full mobile-dropdown uppercase pt-4">
+                                        Liens utiles
+                                        <span>+</span>
+                                    </button>
+                                    <div class="hidden pl-4 mt-2 space-y-2">
+                                        <a href="#">Attestation médicale</a><br>
+                                        <a href="#">Déclaration d'accident</a><br>
+                                        <a href="#">Site LIFRAS</a><br>
+                                        <a href="#">Site CMAS</a>
+                                    </div>
+                                </div>
+
+                                <a href="#">Agenda</a>
+                                <a href="#">Contact</a>
+                            </nav>
+                        </header>
+
+
+                        <div class="flex justify-center mt-3">
+                            <div class="bg-white h-0.25 w-250 opacity-25"></div>
+                        </div>
+                        <div class="flex justify-center mt-50 max-[376px]:mt-25">
+                            <div class="w-190 text-center max-[500px]:w-100 max-[430px]:w-92 max-[376px]:w-60">
+                                <h1 class="text-white font-title text-5xl uppercase max-[500px]:text-2xl max-[770px]:text-3xl">Venez découvrir <span class="font-bold">la plongée</span> avec nous !</h1>
+                                <p class="mt-5 text-white text-2xl max-[500px]:text-xl max-[770px]:text-2xl">Envie d'en savoir plus sur le plus beau sport du monde ?</p>
+                                <div class="mt-12 flex justify-center">
+                                    <div class="flex justify-center items-center w-50 h-12 bg-white rounded hover hover:bg-gray-300 max-[500px]:w-40 max-[500px]:h-10">
+                                        <a href="#" class="uppercase font-text font-semibold max-[500px]:text-sm max-[770px]:text">contactez-nous</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+        </hero>
+
+        <main class="mt-20">
+
+            <!-- SECTION A PROPOS DE NOUS -->
+
+            <section>
+                <div class="flex justify-center">
+                    <h2 class="titre-souligne font-title text-4xl font-semibold uppercase max-[770px]:text-3xl max-[770px]:text-center max-[770px]:w-100">Les Squales en quelques mots</h2>
+                </div>
+                <div class="mt-20 flex justify-center gap-10 max-[770px]:flex-col max-[770px]:items-center">
+                    <div class="cards flex flex-col items-center max-[430px]:w-90 max-[376px]:w-80 max-[430px]:h-105">
+                        <h3 class="pt-10 text-white font-title font-semibold text-2xl uppercase text-center max-[430px]:text-xl max-[430px]:pt-3">Qui sommes-nous ?</h3>
+                        <img src="ressources/mask.svg" alt="svg de masque de plongée" class="size-35 m-5 max-[430px]:size-30">
+                        <p class="text-white font-text text-center text-lg text- p-5 max-[430px]:text-base">Créé en 1965, le club Les Squales est une association de passionnés de plongée qui partagent leur savoir et leur amour des fonds marins en toute sécurité.</p>
+                    </div>
+                    <div class="cards2 flex flex-col items-center max-[430px]:w-90 max-[376px]:w-80 max-[430px]:h-105">
+                        <h3 class="pt-10 text-white font-title font-semibold text-2xl uppercase text-center max-[430px]:text-xl max-[430px]:pt-3">Nos formations</h3>
+                        <img src="ressources/diploma.svg" alt="svg d'un diplome'" class="size-25 m-10 max-[430px]:size-20">
+                        <p class="text-white font-text text-center text-lg p-5 max-[430px]:text-base">Des premiers pas sous l'eau jusqu'à la certification de moniteur, nous vous accompagnons à chaque niveau de votre progression.</p>
+                    </div>
+                    <div class="cards flex flex-col items-center max-[430px]:w-90 max-[376px]:w-80 max-[430px]:h-105">
+                        <h3 class="pt-10 text-white font-title font-semibold text-2xl uppercase text-center max-[430px]:text-xl max-[430px]:pt-3">Nos aventures</h3>
+                        <img src="ressources/scuba.svg" alt="svg de masque de plongée" class="size-30 m-7 max-[430px]:size-20">
+                        <p class="text-white font-text text-center text-lg p-5 max-[430px]:text-base">Rejoignez-nous pour nos sorties régulières en carrière, en lac ou encore en Zélande et découvrez des sites de plongée exceptionnels lors de nos voyages annuels.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECTION DECOUVERTE -->
+
+            <!-- <section class="mt-30">
+                <div class="w-full h-175 bg-[url(../ressources/mer.jpg)] bg-cover bg-center ">
+                    <div class="mt-10 flex justify-center">
+                        <div class="mt-20 flex w-310 h-135 bg-[url(../ressources/mer.jpg)] bg-cover bg-bottom shadow-xl rounded-lg">
+                            <div class="w-1/2 mt-13 ml-15 relative">
+                                <div id="carousel-container-img" class="overflow-hidden rounded-md shadow-xl border-white border-1">
+                                    <div id="carousel-slides-img" class="flex transition-transform duration-500 ease-in-out">
+                                        <img src="/ressources/piscine.JPG" alt="plongée dans la piscine" class="carousel-img flex-shrink-0 w-full h-auto">
+                                        <img src="/ressources/piscine2.JPG" alt="image 2" class="carousel-img flex-shrink-0 w-full h-auto">
+                                        <img src="/ressources/piscine3.JPG" alt="image 3" class="carousel-img flex-shrink-0 w-full h-auto">
+                                    </div>
+                                </div>
+                                <div id="carousel-dots-img" class="absolute bottom-6 left-1/2 transform -translate-x-1/2 flex space-x-2">
+                                    </div>
+                            </div>
+                            <div class="w-1/2 flex flex-col pl-15 pr-10 justify-center">
+                                <h3 class="font-title text-4xl font-semibold text-white uppercase">L'aventure commence ici</h3>
+                                <p class="font-text mt-10 text-white">
+                                    Envie de vous évader dans ce magnifique sport qui est la plongée sous marine avec la grande famille des Squales, nous vous offrons 3 plongées en piscine pour vous donner envie de recommencer 😁.
+                                </p>
+                                <p class="font-text text-white mt-5">
+                                    Du matériel sera mis a votre disposition, les seules choses dont vous aurez besoin est un maillot, un essuie et votre envie.
+                                </p>
+                                <p class="font-text text-white mt-5">
+                                    Si après ces trois plongées découvertes vous êtes conquis, nous vous expliquerons les marches à suivre pour rejoindre notre belle famille de plongeur.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section> -->
+
+            <!-- SECTION NOS ENDROITS DE PLONGEE -->
+
+            <!-- <section class="mt-30">
+                <div class="flex justify-center">
+                    <h2 class="titre-souligne font-title text-4xl font-semibold uppercase">Nos endroits de descente</h2>
+                </div>
+                <div class="mt-20 flex justify-center gap-5">
+                    <div class="flex justify-center cards3">
+                        <div class="mt-8 w-70 h-40">
+                            <img src="./ressources/la_gombe.jpg" alt="image de la carrière de la gombe à Esneux en Belgique" class="w-70 h-40 object-cover object-center rounded-lg">
+                            <h2 class="mt-4 uppercase text-center font-title text-2xl font-light">La gombe</h2>
+                            <p class="mt-4 font-text text-center ">La carrière de la Gombe, en Belgique, est une ancienne carrière de grès reconvertie en site de plongée sous-marine. Profonde d'environ 30 mètres. </p>
+                            <div class="text-center m-5 font-text underline">
+                                <a href="https://clas.be/carriere-de-la-gombe/" target="_blank">Site de la Gombe</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex justify-center cards3">
+                        <div class="mt-8 w-70 h-40">
+                            <img src="./ressources/vodelee.jpg" alt="image de la carrière de Vodelée en Belgique" class="w-70 h-40 object-cover object-bottom rounded-lg">
+                            <h2 class="mt-4 uppercase text-center font-title text-2xl font-light">vodelée</h2>
+                            <p class="mt-4 font-text text-center ">La carrière de la Gombe, en Belgique, est une ancienne carrière de grès reconvertie en site de plongée sous-marine. Profonde d'environ 30 mètres. </p>
+                            <div class="text-center m-5 font-text underline">
+                                <a href="https://www.royalcas.be/carriere-de-vodelee/" target="_blank">Site de Vodelée</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex justify-center cards3">
+                        <div class="mt-8 w-70 h-40">
+                            <img src="./ressources/villers.jpg" alt="image de la carrière de Villers-Deux-Eglises en Belgique" class="w-70 h-40 object-cover object-center rounded-lg">
+                            <h2 class="mt-4 uppercase text-center font-title text-2xl font-light">Villers-deux-eglises</h2>
+                            <p class="mt-4 font-text text-center ">La carrière de la Gombe, en Belgique, est une ancienne carrière de grès reconvertie en site de plongée sous-marine. Profonde d'environ 30 mètres. </p>
+                            <div class="text-center m-5 font-text underline">
+                                <a href="https://carrierev2e.be/" target="_blank">Site de Villers-Deux-Eglises</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex justify-center cards3">
+                        <div class="mt-8 w-70 h-40">
+                            <img src="./ressources/zelande.jpg" alt="image de plongeur entrant dans la mer de Zélande" class="w-70 h-40 object-cover object-top rounded-lg">
+                            <h2 class="mt-4 uppercase text-center font-title text-2xl font-light">Zélande</h2>
+                            <p class="mt-4 font-text text-center ">La carrière de la Gombe, en Belgique, est une ancienne carrière de grès reconvertie en site de plongée sous-marine. Profonde d'environ 30 mètres. </p>
+                            <div class="text-center m-5 font-text underline">
+                                <a href="https://www.divingzeeland.be/" target="_blank">Informations Zélande</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main> -->
+
+        <!-- FOOTER -->
+<!-- 
+        <footer class="mt-40">
+            <div class="flex justify-center w-full h-100 bg-darkblue">
+                <div class="ml-20 flex justify-center items-center w-120 h-full">
+                    <a href="index.html"><img src="ressources/logo_squales.png" alt="" class="w-70"></a>
+                </div>
+                <div class="ml-10 flex flex-col justify-center w-50 h-full gap-2">
+                    <h3 class="mb-10 uppercase text-2xl font-semibold text-white">Liens rapides</h3>
+                    <p class="font-text text-white">- <a href="#" class="underline hover:font-semibold">Histoire des Squales</a></p>
+                    <p class="font-text text-white">- <a href="#" class="underline hover:font-semibold">Agenda</a></p>
+                    <p class="font-text text-white">- <a href="#" class="underline hover:font-semibold">Galerie</a></p>
+                    <p class="font-text text-white">- <a href="#" class="underline hover:font-semibold">Contact</a></p>
+                </div>
+                <div class="pt-11 flex flex-col justify-center w-60 h-full gap-2">
+                    <p class="font-text text-white">- <a href="#" class="underline hover:font-semibold">Attestation médicale</a></p>
+                    <p class="font-text text-white">- <a href="#" class="underline hover:font-semibold">R.O.I.</a></p>
+                    <p class="font-text text-white">- <a href="#" class="underline hover:font-semibold">Politique de confidentialité</a></p>
+
+                </div>                
+                <div class="ml-35 flex flex-col justify-center w-120 h-full gap-2">
+                    <h3 class="mt-8 mb-10 uppercase text-2xl font-semibold text-white">Coordonnées</h3>
+                    <p class="font-text text-white">Les Squales ASBL</p>
+                    <p class="font-text text-white">Rue Xhavée 54, 4800 Verviers</p>
+                    <p class="font-text text-white">0475/85.30.48</p>
+                    <a href="mailto:president@lesquales.be" class="font-text text-white underline hover:font-semibold">president@lesquales.be</a>
+                    <a href="https://www.facebook.com/groups/44121916670/?locale=fr_FR" class="font-text text-white underline hover:font-semibold">Facebook des Squales</a>
+
+                </div>
+            </div>
+        </footer> -->
+    <script src="script.js"></script>
+</body>
+</html>

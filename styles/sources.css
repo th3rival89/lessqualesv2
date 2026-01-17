@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import "tailwindcss"; 
+
+@theme {
+  --font-text: 'Montserrat', sans-serif;
+  --font-title: 'Open Sans', sans-serif;
+  --color-lightblue: #82B5D2;
+  --color-darkblue: #0165A0;
+}
+
+@layer components {
+    .cards {
+        @apply bg-lightblue cursor-pointer rounded-lg shadow-md p-6 transform transition-all duration-300 hover:scale-105 hover:shadow-xl w-100 h-120;
+    }
+    .cards2 {
+        @apply bg-darkblue cursor-pointer rounded-lg shadow-md p-6 transform transition-all duration-300 hover:scale-105 hover:shadow-xl w-100 h-120;
+    }
+    .cards3 {
+        @apply w-80 h-110 shadow-xl rounded-lg;
+    }
+}
