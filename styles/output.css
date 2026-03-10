@@ -566,6 +566,9 @@
   .bg-\[url\(\.\.\/ressources\/Hero\.png\)\] {
     background-image: url(../ressources/Hero.png);
   }
+  .bg-\[url\(\.\.\/ressources\/Hero\.webp\)\] {
+    background-image: url(../ressources/Hero.webp);
+  }
   .bg-\[url\(\.\.\/ressources\/mer\.jpg\)\] {
     background-image: url(../ressources/mer.jpg);
   }
