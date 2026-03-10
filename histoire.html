@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Les Squales</title>
+        <link rel="icon" href="ressources/logo_squales_noir.png" type="image/x-icon" />
+        <link rel="stylesheet" href="./styles/output.css">
+    </head>
+    <body>
+        <head>
+        <hero>
+            <section>
+                <div class="relative w-full h-125 bg-cover bg-top max-[770px]:h-200 max-[425px]:h-175">
+                        <!-- <div class="flex flex-col bg-[url(../ressources/tortue.jpg)] w-full h-full bg-position-[center_70rem] bg-cover" alt="Image d'un plongeur dans le fond de la mer"> -->
+                        <div class="flex flex-col w-full h-full bg-[url('../ressources/tortue.jpg')] bg-cover bg-center bg-no-repeat">
+                        <div class="flex justify-center mt-5">
+                            <div class="flex items-center">
+                                <a href="index.html"><img src="ressources/logo_squales.png" alt="Logo du club des Squales" class="w-60 max-[380px]:w-40"></a>
+                            </div>
+                            <div class="flex-col items-center">
+                                <p class="pt-2 text-5xl text-white uppercase font-title font-semibold max-[500px]:text-2xl max-[770px]:text-3xl">Les Squales</p>
+                                <p class="pt-2 text-3xl text-white uppercase font-title max-[500px]:text-xl max-[770px]:text-2xl">Ecole de plongée</p>      
+                            </div>
+                        </div>
+                        <div class="flex justify-center mt-5">
+                            <div class="bg-white h-0.25 w-250 opacity-25"></div>
+                        </div>
+
+                        <header class="min-[768px]:bg-blue-600/0 ">
+                            <div class="max-w-7xl mx-auto px-4">
+
+                                <!-- Barre du haut -->
+                                <div class="flex items-center justify-center h-16 max-[768px]:justify-end">
+
+                                    <!-- Bouton hamburger (mobile uniquement) -->
+                                    <button id="menu-btn" class="text-white md:hidden">
+                                        <svg class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M4 6h16M4 12h16M4 18h16"/>
+                                        </svg>
+                                    </button>
+
+                                    <!-- Menu desktop -->
+                                    <nav class="hidden md:flex gap-8 items-center font-text font-semibold uppercase text-white">
+
+                                        <a href="index.html">Accueil</a>
+
+                                        <!-- Dropdown -->
+                                        <div class="relative group">
+                                            <button class="flex items-center gap-1 uppercase">
+                                                Les squales
+                                                <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                        d="M19 9l-7 7-7-7"/>
+                                                </svg>
+                                            </button>
+
+                                            <div class="absolute hidden group-hover:block top-full left-0 bg-white text-black shadow-lg w-56">
+                                                <a class="block px-4 py-2 hover:bg-gray-100" href="./histoire.html">L'histoire</a>
+                                                <a class="block px-4 py-2 hover:bg-gray-100" href="lecomite.html">Le comité</a>
+                                                <a class="block px-4 py-2 hover:bg-gray-100" href="./lesmoniteurs.html">Les moniteurs</a>
+                                                <a class="block px-4 py-2 hover:bg-gray-100" href="./sorties.html">Les sorties</a>
+                                                <a class="block px-4 py-2 hover:bg-gray-100" href="./Iclub.html">Informations club</a>
+                                                <a class="block px-4 py-2 hover:bg-gray-100" href="./lescours.html">Les cours</a>
+                                                <a class="block px-4 py-2 hover:bg-gray-100" href="./ROI.html">Règlement ROI</a>
+                                            </div>
+                                        </div>
+
+                                        <a href="#">Les photos</a>
+
+                                        <div class="relative group">
+                                            <button class="flex items-center gap-1 uppercase">
+                                                Liens utiles
+                                                <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                        d="M19 9l-7 7-7-7"/>
+                                                </svg>
+                                            </button>
+
+                                            <div class="absolute hidden group-hover:block top-full left-0 bg-white text-black shadow-lg w-56">
+                                                <a class="block px-4 py-2 hover:bg-gray-100" href="https://sharing.oodrive.com/share-access/sharings/dlCgLglT.k55J5g5z#/filer/share-access/3YxF1QdZDQs">Attestation médicale</a>
+                                                <a class="block px-4 py-2 hover:bg-gray-100" href="https://sharing.oodrive.com/share-access/sharings/C55ak5LS.355J5g5M#/filer/share-access/vGX2VUUManw">Déclaration d'accident</a>
+                                                <a class="block px-4 py-2 hover:bg-gray-100" href="https://www.lifras.be/">Site LIFRAS</a>
+                                                <a class="block px-4 py-2 hover:bg-gray-100" href="https://www.cmas.org/">Site CMAS</a>
+                                            </div>
+                                        </div>
+
+                                        <a href="./agenda.html">Agenda</a>
+                                        <a href="./contact.html">Contact</a>
+                                    </nav>
+                                </div>
+                            </div>
+
+                            <!-- Menu mobile -->
+                            <nav id="mobile-menu"
+                                class="hidden md:hidden bg-white text-black font-text uppercase px-6 py-4 space-y-4 text-sm">
+
+                                <a href="index.html" class="block">Accueil</a>
+
+                                <!-- Sous-menu mobile -->
+                                <div>
+                                    <button class="flex justify-between w-full mobile-dropdown uppercase">
+                                        Les squales
+                                        <span>+</span>
+                                    </button>
+                                    <div class="hidden pl-4 mt-2 space-y-2">
+                                        <a href="./histoire.html">L'histoire</a><br>
+                                        <a href="/lecomite.html">Le comité</a><br>
+                                        <a href="./lesmoniteurs.html">Les moniteurs</a><br>
+                                        <a href="./sorties.html">Les sorties</a><br>
+                                        <a href="./Iclub.html">Informations club</a><br>
+                                        <a href="./lescours.html">Les cours</a><br>
+                                        <a href="./ROI.html">Règlement ROI</a>
+                                    </div>
+                                </div>
+
+                                <a href="">Les photos</a>
+
+                                <div>
+                                    <button class="flex justify-between w-full mobile-dropdown uppercase pt-4">
+                                        Liens utiles
+                                        <span>+</span>
+                                    </button>
+                                    <div class="hidden pl-4 mt-2 space-y-2">
+                                        <a href="https://sharing.oodrive.com/share-access/sharings/dlCgLglT.k55J5g5z#/filer/share-access/3YxF1QdZDQs">Attestation médicale</a><br>
+                                        <a href="https://sharing.oodrive.com/share-access/sharings/C55ak5LS.355J5g5M#/filer/share-access/vGX2VUUManw">Déclaration d'accident</a><br>
+                                        <a href="https://www.lifras.be/">Site LIFRAS</a><br>
+                                        <a href="https://www.cmas.org/">Site CMAS</a>
+                                    </div>
+                                </div>
+
+                                <a href="./agenda.html">Agenda</a>
+                                <a href="#">Contact</a>
+                            </nav>
+                        </header>
+
+
+                        <div class="flex justify-center">
+                            <div class="bg-white h-0.25 w-250 opacity-25"></div>
+                        </div>
+                        <div>
+                            <h1 class="mt-40 ml-15 text-white font-title text-5xl uppercase font-semibold">Les Squales</h1>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+        </hero>        
+
+        </head>
+
+        <!-- HISTOIRE DU CLUB -->        
+
+        <div class="flex justify-center">
+            <h1 class="pt-30 text-5xl font-bold">EN COURS DE CONSTRUCTION</h1>
+        </div>
+
+        <!-- FOOTER -->
+
+        <footer class="mt-40">
+            <div class="flex justify-between px-125 w-full h-100 bg-darkblue max-[1800px]:px-100 max-[1600px]:px-80 max-[1250px]:flex-col max-[1250px]:justify-center max-[1250px]:h-full max-[1250px]:items-center max-[1250px]:py-10 max-[1250px]:px-10">
+                <div class="flex justify-center items-center h-full">
+                    <a href="index.html"><img src="ressources/logo_squales.png" alt="" class="w-70 max-[1250px]:w-50"></a>
+                </div>
+                <div class="flex flex-col justify-center h-full gap-1">
+                    <h3 class="pt-10 mb-10 uppercase text-2xl font-semibold text-white">Liens rapides</h3>
+                    <p class="font-text text-white">- <a href="index.html" class="underline hover:font-semibold">Accueil</a></p>
+                    <p class="font-text text-white">- <a href="./agenda.html" class="underline hover:font-semibold">Agenda</a></p>
+                    <p class="font-text text-white">- <a href="./galerie.html" class="underline hover:font-semibold">Les Photos</a></p>
+                    <p class="font-text text-white">- <a href="./contact.html" class="underline hover:font-semibold">Contact</a></p>
+                    <p class="font-text text-white">- <a href="./pdc.html" class="underline hover:font-semibold">Politique de confidentialité</a></p>         
+                </div>    
+                <div class="flex flex-col justify-center h-full gap-1">
+                    <h3 class="mt-8 mb-10 uppercase text-2xl font-semibold text-white">Coordonnées</h3>
+                    <p class="font-text text-white">Les Squales ASBL</p>
+                    <p class="font-text text-white">Rue Xhavée 54, 4800 Verviers</p>
+                    <p class="font-text text-white">0475/85.30.48</p>
+                    <a href="mailto:president@lesquales.be" class="font-text text-white underline hover:font-semibold">president@lesquales.be</a>
+                    <a href="https://www.facebook.com/groups/44121916670/?locale=fr_FR" class="font-text text-white underline hover:font-semibold">Facebook des Squales</a>
+
+                </div>
+            </div>
+        </footer>    
+        <script src="script.js"></script>
+    </body>
+</html>
