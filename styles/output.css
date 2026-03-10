@@ -560,14 +560,41 @@
   .bg-white {
     background-color: var(--color-white);
   }
+  .bg-\[url\(\"\"\.\.\/ressources\/hero\.webp\)\] {
+    background-image: url(""../ressources/hero.webp);
+  }
+  .bg-\[url\(\'\'\.\.\/ressources\/hero\.webp\)\] {
+    background-image: url(''../ressources/hero.webp);
+  }
+  .bg-\[url\(\'\'\.\/ressources\/hero\.webp\)\] {
+    background-image: url(''./ressources/hero.webp);
+  }
+  .bg-\[url\(\'\.\.\/ressources\/hero\.png\'\)\] {
+    background-image: url('../ressources/hero.png');
+  }
+  .bg-\[url\(\'\.\.\/ressources\/hero\.webp\'\)\] {
+    background-image: url('../ressources/hero.webp');
+  }
   .bg-\[url\(\'\.\.\/ressources\/tortue\.jpg\'\)\] {
     background-image: url('../ressources/tortue.jpg');
+  }
+  .bg-\[url\(\'\.\/ressources\/hero\.webp\'\)\] {
+    background-image: url('./ressources/hero.webp');
   }
   .bg-\[url\(\.\.\/ressources\/Hero\.png\)\] {
     background-image: url(../ressources/Hero.png);
   }
   .bg-\[url\(\.\.\/ressources\/Hero\.webp\)\] {
     background-image: url(../ressources/Hero.webp);
+  }
+  .bg-\[url\(\.\.\/ressources\/ero\.webp\)\] {
+    background-image: url(../ressources/ero.webp);
+  }
+  .bg-\[url\(\.\.\/ressources\/hero\.png\)\] {
+    background-image: url(../ressources/hero.png);
+  }
+  .bg-\[url\(\.\.\/ressources\/hero\.webp\)\] {
+    background-image: url(../ressources/hero.webp);
   }
   .bg-\[url\(\.\.\/ressources\/mer\.jpg\)\] {
     background-image: url(../ressources/mer.jpg);
